@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class NewsRepository {
   Future<List<ArticleModel>> fetchArticle({@required String? country}) async {
     String mainUrl =
-        "https://newsapi.org/v2/top-headlines?country=$country&apiKey={Your API Key Here}";
+        "https://newsapi.org/v2/top-headlines?country=$country&apiKey={Paste Your API Key Here}";
     var response = await http.get(Uri.parse(mainUrl));
     List<ArticleModel> _albumlist = [];
 
